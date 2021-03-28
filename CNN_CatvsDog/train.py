@@ -72,7 +72,7 @@ def train():
     return train_loss_list, train_accuracy_list, val_loss_list, val_accuracy_list
 
 def drew(train_loss_list, train_acc_list, val_loss_list, val_acc_list):
-    plt.figure()
+    plt.figure(figsize = (14,7))
     plt.suptitle("ResNet34 Cats VS Dogs Train & Validation Result")
     plt.subplot(121)
     plt.title('Loss')
